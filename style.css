@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body::before {
+    content         : '';
+    position        : fixed;
+    top             : 0;
+    left            : 0;
+    width           : 100%;
+    height          : 100%;
+    background-image: linear-gradient(151deg, rgba(2, 0, 36, 0.7) 0%, rgba(76, 76, 222, 0.6) 3%, rgba(0, 212, 255, 0.4) 100%), url(img/computer.png);
+    background-size : cover;
+    z-index         : -1;
+}
+
+body {
+    font-family: Lato, sans-serif;
+}
+
+
+h1,
+p {
+    text-align: center;
+    color     : white;
+}
+
+form {
+    max-width       : 600px;
+    background-color: rgba(3, 3, 28, 0.65);
+    margin          : 0 auto;
+    padding         : 20px 40px;
+    color           : white;
+    border-radius   : 5px;
+}
+
+label,
+select {
+    display      : block;
+    margin-bottom: 15px;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='number'],
+input[type='dropdown'],
+select,
+textarea {
+    font-size    : inherit;
+    margin-top   : 10px;
+    height       : 40px;
+    width        : 100%;
+    border-radius: 5px;
+    border       : 0;
+    padding      : 10px;
+    font-family  : inherit;
+}
+
+input[type='radio'],
+input[type='checkbox'] {
+    margin-bottom: 10px;
+}
+
+textarea {
+    padding: 10px;
+    font   : inherit;
+    height : 100px;
+}
+
+
+button {
+    font-size    : inherit;
+    width        : 100%;
+    height       : 40px;
+    background   : #64e6a9;
+    border-radius: 5px;
+}
+
+#comments-label {
+    text-align: center;
+}
+
+@media (max-width: 1920px) {
+    .maps {
+        background: ;
+        position  : relative;
+        height    : 400px;
+        width     : 600px;
+        margin    : 40px auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .maps {
+        background   : ;
+        position     : relative;
+        width        : 350px;
+        height       : 350px;
+        border-radius: 5px;
+    }
+
+    .maps iframe {
+        position     : relative;
+        width        : 350px;
+        height       : 350px;
+        border-radius: 5px;
+    }
+}
